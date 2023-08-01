@@ -4,10 +4,32 @@
 <head>
   <title>Cat Simulator on Roblox!</title>
   <link href="Style.css" rel="stylesheet" type="text/css" />
+  <script src = "Main.js" defer>  </script>
+  <meta name="viewport" content="width=device-width">
 </head>
 
-<body>
-    <h1> Cat Simulator on Roblox!</h1>
+<body id= "body" >
+  <img src="Images/GameLogo.png">
+  <h1> On Roblox!</h1>
+  <div id = GameInfo>
+    <a target = "_blank" href = "https://web.roblox.com/games/10546062299/Cat-Simulator">
+    <div id = "PlayerActiveAndGameNameDiv">
+      <img src= "Images/Game.png" class="Expand">
+      <div id = "PlayersActive"> {Not Loaded} Players Active </div>
+      <div id = "GameLogo">
+        <img src = "Images/GameLogo.png">
+       </div>
+    </div>
+    </a>
+    <div id = GameBottomBar>
+      <div class="frame" id ="GameBottomBarGrid">
+        <p id = GameVisits> Visits: </p>
+        <p id = DateReleased> Date Released: </p>
+        <p id = DateReleasedValue> Not Released </p>
+        <p id = GameVisitsValue> {Not Loaded} </p>
+      </div>
+    </div>
+</div>
 </body>
 
 </html>

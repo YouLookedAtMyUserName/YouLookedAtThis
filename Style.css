@@ -1,4 +1,123 @@
 h1{
+    grid-column: 1/4;
     margin:auto;
     text-align:center;
-  }
+    width:50%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-stretch: expanded;
+    font-size: 10vw;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width:100%;
+  margin:auto;
+  display: block;
+  grid-column: 1/4;
+}
+
+#body{
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+}
+
+#GameInfo{
+  grid-column: 2/3;
+  /* justify-content: center;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 3.9fr 18vw;
+  grid-gap: 0%;
+  max-height: 50%; */
+}
+
+#PlayersActive{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  z-index: 100;
+  font-size: 5vw;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  pointer-events: none;
+  align-self: flex-end;
+}
+
+#GameLogo{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  z-index: 100;
+  pointer-events: none;
+  align-self: flex-start;
+}
+
+#PlayerActiveAndGameNameDiv{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 0.4fr 0.5fr 0.5fr;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  grid-row: 1/2;
+  grid-column: 1/3;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 0.25vw;
+  -webkit-text-stroke-color: black;
+}
+
+.Expand{
+  transition: 0.5s transform ease-in-out;
+  width: 100%;
+  grid-row: 1/4;
+}
+
+.Expand:hover{
+  transform: scale(1.1);
+}
+
+#GameBottomBar{
+  background-color:rgb(0, 0, 0);
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+#GameBottomBarGrid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 90%;
+}
+
+#DateReleased{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3vw;
+  -webkit-text-fill-color: rgba(207, 207, 207, 0.412);
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#GameVisits{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3vw;
+  -webkit-text-fill-color: rgba(207, 207, 207, 0.412);
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#DateReleasedValue{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 5vw;
+  -webkit-text-fill-color: rgb(207, 207, 207);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-bottom: 0px;
+}
+
+#GameVisitsValue{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 5vw;
+  -webkit-text-fill-color: rgb(207, 207, 207);
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-bottom: 0px;
+}
