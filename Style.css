@@ -19,19 +19,18 @@ img{
   grid-column: 1/4;
 }
 
-#body{
-  display: grid;
-  grid-template-columns: 15% 70% 15%;
+@media screen and(max-width: 900px) {
+  
+}
+
+#GroupLogo{
+  max-height:20vw ;
 }
 
 #GameInfo{
-  grid-column: 2/3;
-  /* justify-content: center;
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-rows: 3.9fr 18vw;
-  grid-gap: 0%;
-  max-height: 50%; */
+  max-width: 75%;
+  max-height: 50vw;
+  margin: auto;
 }
 
 #PlayersActive{
@@ -50,12 +49,14 @@ img{
   z-index: 100;
   pointer-events: none;
   align-self: flex-start;
+  max-width: 75%;
 }
 
 #PlayerActiveAndGameNameDiv{
   display: grid;
   grid-template-columns: 80% 20%;
   grid-template-rows: 0.4fr 0.5fr 0.5fr;
+  max-height: 35.5vw;
   overflow: hidden;
   position: relative;
   text-align: left;
@@ -84,6 +85,7 @@ img{
 
 #GameBottomBarGrid{
   display: grid;
+  max-height: 14.5vw;
   grid-template-columns: 50% 50%;
   grid-template-rows: 10% 90%;
 }
